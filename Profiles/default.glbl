@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'AIzaSyBWNNhK9Uhco_ohCnYbazcKwng-MHjHG34'</initValue>
+      <initValue>please enter your API Key Here</initValue>
       <name>apiKey</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
