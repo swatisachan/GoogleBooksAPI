@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.googleapis.com/books'</initValue>
+      <name>baseUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>200</initValue>
+      <name>successCode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'AIzaSyBWNNhK9Uhco_ohCnYbazcKwng-MHjHG34'</initValue>
+      <name>apiKey</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Harry Potter'</initValue>
+      <name>SearchString</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('oclc') : 'CLC:892041411', ('isbn') : '0747574510', ('subject') : 'Juvenile Fiction', ('inpublisher') : 'Bloomsbury Childrens', ('inauthor') : 'J. K. Rowling', ('intitle') : 'Harry Potter\'s School Books', ('filter') : 'free-ebooks', ('orderBy') : 'newest', ('projection') : 'full', ('printType') : 'books', ('maxResults') : '40', ('startIndex') : '3']</initValue>
+      <name>VolumeMap</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
