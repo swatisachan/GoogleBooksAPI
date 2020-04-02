@@ -17,3 +17,6 @@ Steps followed:
 3. Search your fav book.
 4. In left hand side navigation bar, click on my library.
 5. Select any bookShelf and verify the application Url, obtain the UID.
+
+3. This project is developed using Katalon Studio.
+Related Docs: https://docs.katalon.com/katalon-studio/docs/index.html
