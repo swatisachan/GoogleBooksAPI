@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>GET_BookShelves_Based_On_UserID</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>de5b56ac-8978-41be-b47b-34f3582ed5b4</testCaseGuid>
+</TestCaseEntity>

@@ -19,8 +19,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class CommonKeywords {
-	
-	
+
+
 	/**
 	 * @author: swati
 	 * @description: Break the string into words
@@ -28,39 +28,45 @@ public class CommonKeywords {
 	 * @param inputString
 	 * @return
 	 */
-	 def static BreakStringIntoWordsAppendedPlus(String inputString){
-		 List<String> listOfWords=inputString.split(" ")
-		 String finalString=""
-		 Iterator<String> itr=listOfWords.iterator()
-		 int count=0
-		 while(itr.hasNext()){
-			 String eachWord=itr.next()
-			 count=count+1
-			 if(count== listOfWords.size())
-			 finalString= finalString+eachWord
-			 else
-			 finalString=finalString+eachWord+"+" 
-		 }
-		 return finalString
-	 }
-	 
-	 /**@author: swati
-	  * @description: Frame the query Url
-	  * @param glblVarUrl
-	  * @param inputMapUrl
-	  * @return
-	  */
-	 def static frameQueryString(Map<String,String> glblVarUrl, List<String> inputKeys){
-		 Set<String> glblKeySet=glblVarUrl.keySet()
-		 String finalQueryUrl=""
-	 	 Iterator<String> glblKeys=glblKeySet.iterator()
-		  while(glblKeys.hasNext()){
-			  String glblKey=glblKeys.next()
-			  if(inputKeys.contains(glblKey)){
-				 String value= glblVarUrl.get(glblKey)
-				 finalQueryUrl=finalQueryUrl+"q"+"="+value
-			  }
-		  }
-		  return finalQueryUrl
-	 }
+	def static BreakStringIntoWordsAppendedPlus(String inputString){
+		List<String> listOfWords=inputString.split(" ")
+		String finalString=""
+		Iterator<String> itr=listOfWords.iterator()
+		int count=0
+		while(itr.hasNext()){
+			String eachWord=itr.next()
+			count=count+1
+			if(count== listOfWords.size())
+				finalString= finalString+eachWord
+			else
+				finalString=finalString+eachWord+"+"
+		}
+		return finalString
+	}
+
+	/**@author: swati
+	 * @description: Frame the query Url
+	 * @param glblVarUrl
+	 * @param inputMapUrl
+	 * @return
+	 */
+	def static frameQueryString(Map<String,String> glblVarUrl, List<String> inputKeys){
+		Set<String> glblKeySet=glblVarUrl.keySet()
+		String finalQueryUrl=""
+		Iterator<String> glblKeys=glblKeySet.iterator()
+		int count=0
+		while(glblKeys.hasNext()){
+			String glblKey=glblKeys.next()
+			if(inputKeys.contains(glblKey)){
+				String value= glblVarUrl.get(glblKey)
+				value=BreakStringIntoWordsAppendedPlus(value)
+				count=count+1
+				if(count==inputKeys.size())
+					finalQueryUrl=finalQueryUrl+glblKey+"="+value
+				else
+					finalQueryUrl=finalQueryUrl+glblKey+"="+value+"&"
+			}
+		}
+		return finalQueryUrl
+	}
 }
