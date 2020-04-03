@@ -20,3 +20,5 @@ Steps followed:
 
 3. This project is developed using Katalon Studio.
 Related Docs: https://docs.katalon.com/katalon-studio/docs/index.html
+
+For More information,kindly refer to our blog: https://googlebookapiautomation.blogspot.com/2020/04/postman-collection-for-google-books-api.html
